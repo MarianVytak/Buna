@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto-Regular', sans-serif;
   font-size: 16px;
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
@@ -10,6 +11,10 @@ h1, h2, h3, h4, h5, h6, ul {
 
 li {
   list-style-type: none;
+}
+
+p {
+  margin-bottom: 1.5em;
 }
 
 a {
