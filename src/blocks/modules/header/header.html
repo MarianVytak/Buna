@@ -1,54 +1,8 @@
 <header class="header">
 
-    <div class="header__top">
-        <div class="container">
-            <div class="header__top_box">
-                <a href="tel:88005461897" class="header__top_link header__top_tel">
-                    <img src="../../../img/svg/call.svg" alt="">
-                    8 800 546 18 97
-                </a>
-                <a href="mailto:coffee@mail.ru" class="header__top_link header__top_mail">
-                    <img src="../../../img/svg/mail.svg" alt="">
-                    coffee@mail.ru
-                </a>
-                <div class="header__top_btn">
-                    <button type="button" class="btn btn-outline-accented">Зарегистрироваться</button>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.header__top -->
+    @@include("../header-top/header-top.html")
 
-    <div class="header__bot">
-        <div class="container">
-            <div class="header__bot_box">
-
-                <div class="header__logo logo"></div>
-
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list_item">
-                            <a href="#" class="navigation__list_item_link active">Главная</a>
-                        </li>
-                        <li class="navigation__list_item">
-                            <a href="#" class="navigation__list_item_link">Клиентам</a>
-                        </li>
-                        <li class="navigation__list_item">
-                            <a href="#" class="navigation__list_item_link">Партнерам</a>
-                        </li>
-                        <li class="navigation__list_item">
-                            <a href="#" class="navigation__list_item_link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /.navigation -->
-
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.header__bot -->
+    @@include("../header-bot/header-bot.html")
 
 </header>
 <!-- /.header -->

@@ -1,0 +1,27 @@
+.header__top {
+  padding: 10px;
+  background-color: $black;
+}
+
+.header__top_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__top_link {
+  display: inline-flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.header__top_tel {
+  margin-right: 40px;
+  font-family: 'Roboto-Medium', sans-serif;
+}
+
+.header__top_mail {
+  margin-right: 50px;
+}

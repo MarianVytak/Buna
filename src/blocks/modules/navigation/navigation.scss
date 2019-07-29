@@ -1,0 +1,23 @@
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list_item {
+  margin-right: 100px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__list_item_link {
+  color: #171819;
+  text-transform: uppercase;
+  &:hover {
+    color: #7f6358;
+  }
+  &.active {
+    font-family: 'Roboto-Bold', sans-serif;
+    color: #7f6358;
+  }
+}
