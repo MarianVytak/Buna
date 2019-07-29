@@ -17,6 +17,11 @@ p {
   margin-bottom: 1.5em;
 }
 
+img {
+  width: auto;
+  max-width: 100%;
+}
+
 a {
   color: $white;
   transition: .3s;
