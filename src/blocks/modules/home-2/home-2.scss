@@ -1,0 +1,30 @@
+.home-2 {
+  padding: 60px 0;
+  background-color: #fbf9f8;
+  .col-xl {
+    &:last-child {
+      .card__icon {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .card__icon {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(50%,-50%);
+      width: 60px;
+      height: 7px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='7' viewBox='0 0 60 7'%3E%3Cpath fill='%23212123' fill-opacity='.5' fill-rule='nonzero' d='M57.796 3L55.21 1.004c-.217-.167-.276-.508-.132-.76.145-.252.438-.32.655-.152l4.055 3.13c.286.22.28.71-.01.921l-4.045 2.773c-.22.161-.512.083-.65-.173-.14-.257-.072-.595.149-.756L58.162 4H0V3h57.796z'/%3E%3C/svg%3E%0A");
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
