@@ -1,0 +1,23 @@
+$white:    #f8f8f8 !default;
+$black:    #212123 !default;
+$accented: #f5ddb9 !default;
+
+$colors: () !default;
+$colors: map-merge(
+                (
+                        "white":      $white,
+                        "black":      $black,
+                        "accented":   $accented,
+                ),
+                $colors
+);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                (
+                        "white":      $white,
+                        "black":      $black,
+                        "accented":   $accented,
+                ),
+                $theme-colors
+);

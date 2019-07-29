@@ -1,4 +1,22 @@
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: $white;
+  transition: .3s;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
 }
