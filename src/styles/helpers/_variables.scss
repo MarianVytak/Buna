@@ -1,6 +1,7 @@
-$white:    #f8f8f8 !default;
+$white:    #ffffff !default;
 $black:    #212123 !default;
 $accented: #f5ddb9 !default;
+$brown: #755b51 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -8,6 +9,7 @@ $colors: map-merge(
                         "white":      $white,
                         "black":      $black,
                         "accented":   $accented,
+                        "brown":      $brown,
                 ),
                 $colors
 );
@@ -18,6 +20,7 @@ $theme-colors: map-merge(
                         "white":      $white,
                         "black":      $black,
                         "accented":   $accented,
+                        "brown":      $brown,
                 ),
                 $theme-colors
 );
