@@ -19,6 +19,9 @@
   font-family: 'Roboto-Medium', sans-serif;
   font-size: 27px;
   color: $black;
+  &:hover {
+    color: $black;
+  }
 }
 
 .footer__bot_icons {
