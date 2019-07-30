@@ -1,0 +1,55 @@
+.form {
+  padding: 60px 0 70px;
+  background-color: #fbf9f8;
+}
+
+.form-text {
+  font-size: 0.875em;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.placeholder {
+  position: absolute;
+  left: 20px;
+  color: rgba($black,.6);
+  transition: .3s;
+}
+
+.form-control {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  border-color: #f1efee;
+  border-radius: 8px;
+  background-color: #f1efee;
+  font-size: 1.125em;
+  &:placeholder-shown + .placeholder {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3125em;
+  }
+  &:not(:placeholder-shown) + .placeholder {
+    top: 0;
+    transform: none;
+    font-size: 18px;
+  }
+  &:focus + .placeholder {
+    top: 0;
+    transform: none;
+    font-size: 1.125em;
+  }
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  .form-group {
+    margin-bottom: 30px;
+  }
+}
