@@ -26,6 +26,30 @@
   width: 100%;
 }
 
+.textarea {
+  position: relative;
+  width: 100%;
+  textarea {
+    &.form-control {
+      height: 210px;
+      padding: 40px 20px 20px;
+      resize: none;
+      &:placeholder-shown + .placeholder {
+        top: 10px;
+        transform: none;
+        font-size: 1.125em;
+      }
+      &:not(:placeholder-shown) + .placeholder {
+        top: 10px;
+        transform: none;
+      }
+      &:focus + .placeholder {
+        top: 10px;
+      }
+    }
+  }
+}
+
 .placeholder {
   position: absolute;
   left: 20px;
