@@ -1,0 +1,15 @@
+.contacts-card {
+  padding: 90px 0;
+  background-color: $white;
+  .card__icon {
+    margin: 0 auto 30px;
+  }
+  .text {
+    font-size: 1.5em;
+    color: $black;
+    transition: .3s;
+    &:hover {
+      color: $brown;
+    }
+  }
+}
