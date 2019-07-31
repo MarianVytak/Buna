@@ -1,0 +1,38 @@
+.social-networks {
+  padding: 50px 0;
+  background-image: url(../../../img/bg/coffee-bg.jpg);
+  .title-2 {
+    margin-bottom: 0;
+  }
+}
+
+.social-networks__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-networks__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.social-networks__list_item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-networks__list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  img {
+    width: 100%;
+  }
+}
