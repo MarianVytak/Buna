@@ -16,8 +16,48 @@
   &:hover {
     color: #7f6358;
   }
-  &.active {
-    font-family: 'Roboto-Bold', sans-serif;
-    color: #7f6358;
+}
+
+.home {
+  .navigation__list_item {
+    &:nth-child(1) {
+      .navigation__list_item_link {
+        font-family: 'Roboto-Bold', sans-serif;
+        color: #7f6358;
+      }
+    }
+  }
+}
+
+.customers {
+  .navigation__list_item {
+    &:nth-child(2) {
+      .navigation__list_item_link {
+        font-family: 'Roboto-Bold', sans-serif;
+        color: #7f6358;
+      }
+    }
+  }
+}
+
+.partners {
+  .navigation__list_item {
+    &:nth-child(3) {
+      .navigation__list_item_link {
+        font-family: 'Roboto-Bold', sans-serif;
+        color: #7f6358;
+      }
+    }
+  }
+}
+
+.contacts {
+  .navigation__list_item {
+    &:nth-child(4) {
+      .navigation__list_item_link {
+        font-family: 'Roboto-Bold', sans-serif;
+        color: #7f6358;
+      }
+    }
   }
 }
