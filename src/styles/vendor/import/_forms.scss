@@ -7,6 +7,20 @@
   font-size: 0.875em;
 }
 
+.form-document {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #1565c0;
+  transition: .3s;
+  &:hover {
+    color: darken(#1565c0, 15);
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+
 .input {
   position: relative;
   width: 100%;
