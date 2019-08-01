@@ -1,4 +1,20 @@
 .intro {
   padding: 80px 0 0;
   background-color: #f3eeea;
+  .applications {
+    margin-bottom: 50px;
+  }
+}
+
+.intro__img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+@include media-breakpoint-down(md) {
+  .intro {
+    padding: 40px 0 0;
+  }
 }

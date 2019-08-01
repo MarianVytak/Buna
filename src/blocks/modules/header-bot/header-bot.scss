@@ -8,3 +8,17 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
+@include media-breakpoint-up(md) {
+  .header__bot {
+    display: flex !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header__bot {
+    display: none;
+    padding: 20px 0;
+  }
+}

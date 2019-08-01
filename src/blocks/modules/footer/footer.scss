@@ -15,7 +15,7 @@
 }
 
 .footer__bot_phone {
-  margin: 0 50px;
+  margin: 0 2em;
   font-family: 'Roboto-Medium', sans-serif;
   font-size: 27px;
   color: $black;
@@ -40,4 +40,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@include media-breakpoint-down(md) {
+  .footer__bot_phone {
+    margin: 0 1em;
+    font-size: 18px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    text-align: center;
+    .applications {
+      margin: 1em 0;
+    }
+  }
+  .footer__bot_box {
+    display: block;
+    padding: 20px 0;
+  }
+  .footer__bot_box_block {
+    display: block;
+  }
+  .footer__bot_icons {
+    justify-content: center;
+    margin-top: 1em;
+  }
 }

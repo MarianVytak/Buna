@@ -66,9 +66,10 @@
         "yargs": "^13.2.4"
     },
     "dependencies": {
-        "jquery": "^3.4.1",
-        "popper.js": "^1.15.0",
         "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
+        "nouislider": "^14.0.2",
+        "popper.js": "^1.15.0",
         "slick-carousel": "^1.8.1"
     }
 }

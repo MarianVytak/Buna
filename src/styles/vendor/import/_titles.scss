@@ -1,11 +1,11 @@
 .title-1 {
-  margin-bottom: 50px;
+  margin-bottom: 1em;
   font-family: 'Museo-Bold', sans-serif;
   font-size: 3em;
 }
 
 .title-2 {
-  margin-bottom: 40px;
+  margin-bottom: 1em;
   font-family: 'Museo-Bold', sans-serif;
   font-size: 2.375em;
 }
@@ -13,4 +13,26 @@
 .text {
   font-size: 1.125em;
   line-height: 1.8;
+}
+
+
+@include media-breakpoint-down(md) {
+  .title-1 {
+    font-size: 2em;
+  }
+  .title-2 {
+    font-size: 1.8em;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .title-1 {
+    text-align: center;
+  }
+  .title-2 {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+  }
 }

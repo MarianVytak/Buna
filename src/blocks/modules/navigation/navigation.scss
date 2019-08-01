@@ -10,6 +10,10 @@
   }
 }
 
+.navigation__list_item_mobile {
+  display: none;
+}
+
 .navigation__list_item_link {
   color: #171819;
   text-transform: uppercase;
@@ -57,6 +61,43 @@
       .navigation__list_item_link {
         font-family: 'Roboto-Bold', sans-serif;
         color: #7f6358;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .navigation__list_item {
+    margin-right: 30px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navigation {
+    justify-content: center;
+    width: 100%;
+  }
+  .navigation__list {
+    display: block;
+    width: 100%;
+  }
+  .navigation__list_item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .navigation__list_item_mobile {
+    display: block;
+    .header__top_link {
+      display: block;
+      margin-right: 0;
+      color: $brown;
+      &:hover {
+        color: $brown;
       }
     }
   }

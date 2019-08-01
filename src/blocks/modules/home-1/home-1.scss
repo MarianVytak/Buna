@@ -2,3 +2,15 @@
   padding: 60px 0;
   background-color: $white;
 }
+
+@include media-breakpoint-down(md) {
+  .home-1 {
+    padding: 40px 0 10px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .home-1__img {
+    margin-bottom: 20px;
+  }
+}

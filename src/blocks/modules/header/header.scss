@@ -1,0 +1,5 @@
+@include media-breakpoint-down(sm) {
+  .header__logo {
+    display: none;
+  }
+}

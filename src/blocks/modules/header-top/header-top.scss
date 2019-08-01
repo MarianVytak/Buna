@@ -1,5 +1,5 @@
 .header__top {
-  padding: 10px;
+  padding: 10px 0;
   background-color: $black;
 }
 
@@ -24,4 +24,17 @@
 
 .header__top_mail {
   margin-right: 50px;
+}
+
+
+@include media-breakpoint-down(sm) {
+  .header__top_box {
+    justify-content: space-between;
+  }
+  .header__top_tel {
+    display: none;
+  }
+  .header__top_mail {
+    display: none;
+  }
 }

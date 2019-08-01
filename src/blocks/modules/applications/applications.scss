@@ -10,3 +10,16 @@
     margin-right: 0;
   }
 }
+
+
+@include media-breakpoint-down(md) {
+  .applications__btn {
+    margin-right: 10px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .applications {
+    justify-content: center;
+  }
+}
