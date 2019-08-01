@@ -9,5 +9,13 @@ $('.category__slider').slick({
     arrows: true,
     dots: true,
     appendDots: $('.category__slider_dots'),
-    dotsClass: 'category__slider_dots_list'
+    dotsClass: 'category__slider_dots_list',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
