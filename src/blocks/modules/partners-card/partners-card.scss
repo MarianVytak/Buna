@@ -2,3 +2,17 @@
   padding: 90px 0 60px;
   background-color: $white;
 }
+
+
+@include media-breakpoint-down(sm) {
+  .partners-card {
+    .card__icon {
+      margin: 40px auto 20px;
+    }
+    .text {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
