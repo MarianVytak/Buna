@@ -36,3 +36,20 @@
     width: 100%;
   }
 }
+
+
+@include media-breakpoint-down(sm) {
+  .social-networks__box {
+    display: block;
+    text-align: center;
+  }
+  .social-networks__list {
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .social-networks__list_item_link {
+    width: 60px;
+    height: 60px;
+  }
+}

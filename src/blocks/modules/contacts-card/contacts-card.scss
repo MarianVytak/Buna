@@ -13,3 +13,18 @@
     }
   }
 }
+
+
+@include media-breakpoint-down(sm) {
+  .contacts-card {
+    .card__icon {
+      margin: 40px auto 20px;
+    }
+    .text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+}
