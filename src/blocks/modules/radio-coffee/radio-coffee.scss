@@ -1,0 +1,47 @@
+.radio-coffee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  label {
+    width: 40px;
+    height: 40px;
+    margin-right: 45px;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    input {
+      &:checked {
+        & + .radio-coffee__input {
+          background-color: $accented;
+          .radio-coffee__input_text {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.radio-coffee__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.radio-coffee__input_text {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+}

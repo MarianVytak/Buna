@@ -1,0 +1,43 @@
+.radio-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  margin: 70px 0;
+  border: 1px solid $black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  label {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    input {
+      &:checked {
+        & + .radio-shop__input {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.radio-shop__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 14px;
+  color: $black;
+}
