@@ -17,10 +17,24 @@
   height: 48px;
   background-color: $white;
   font-family: 'Roboto-Medium', sans-serif;
+  color: $black;
   cursor: pointer;
   transition: .3s;
+  &:hover {
+    color: $black;
+  }
   &.active {
     background-color: $brown;
     color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.toggle__content {
+  display: none;
+  &.active {
+    display: block;
   }
 }

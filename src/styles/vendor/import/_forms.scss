@@ -91,3 +91,9 @@
     margin-bottom: 30px;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .form {
+    padding: 40px 0;
+  }
+}

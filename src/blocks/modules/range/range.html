@@ -1,4 +1,48 @@
-<div class="range" id="range"></div>
+<div class="range">
+
+    <div class="range__slider" id="range"></div>
+
+    <div class="range__value">
+        <div class="range__value_input"><span id="rangeValueCount">10</span>&nbsp;чашек</div>
+        <div class="range__value_input"><span id="rangeValuePrice">1 199</span>&nbsp;руб.</div>
+    </div>
+
+</div>
 <!-- /.range -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.4/nouislider.min.js"></script>
+<script>
+
+    const range = document.getElementById('range');
+    const rangeValueCount = document.getElementById('rangeValueCount');
+    const rangeValuePrice = document.getElementById('rangeValuePrice');
+    const moneyFormat = wNumb({
+        mark: '.',
+        decimals: 0,
+        thousand: ' ',
+    });
+
+    noUiSlider.create(range, {
+        start: 10,
+        connect: true,
+        range: {
+            'min': 1,
+            'max': 50
+        },
+        step: 1,
+        tooltips: true,
+        format: wNumb({
+            decimals: 0,
+            thousand: ' ',
+        })
+    });
+
+    range.noUiSlider.on('update', function (values, handle) {
+        rangeValueCount.innerHTML = values[handle];
+    });
+
+    range.noUiSlider.on('update', function (values, handle) {
+        rangeValuePrice.innerHTML = moneyFormat.to(values[handle] * 120);
+    });
+
+</script>

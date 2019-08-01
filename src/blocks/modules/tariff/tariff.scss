@@ -3,3 +3,10 @@
   background-image: url(../../../img/bg/coffee-bg.jpg);
   overflow: hidden;
 }
+
+
+@include media-breakpoint-down(sm) {
+  .tariff {
+    padding: 40px 0;
+  }
+}

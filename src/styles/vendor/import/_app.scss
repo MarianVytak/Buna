@@ -2,3 +2,10 @@
   padding: 60px 0;
   background-image: url(../../../img/bg/coffee-bg.jpg);
 }
+
+
+@include media-breakpoint-down(sm) {
+  .app {
+    padding: 40px 0;
+  }
+}
