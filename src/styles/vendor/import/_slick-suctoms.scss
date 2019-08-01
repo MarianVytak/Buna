@@ -1,0 +1,70 @@
+@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+
+.slick-slide {
+  outline: none;
+}
+
+// Dots default style
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+  li {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+    button {
+      display: block;
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border: 1px solid $white;
+      border-radius: 50%;
+      background-color: transparent;
+      outline: none;
+      font-size: 0;
+      cursor: pointer;
+    }
+  }
+  .slick-active {
+    button {
+      background-color: $white;
+    }
+  }
+}
+
+// Arrows default style
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 2000;
+  &:focus {
+    outline: none;
+  }
+}
+
+.slick-prev {
+  left: -25px;
+  transform: translate(-100%, -50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='30' viewBox='0 0 15 30'%3E%3Cpath fill='%23000' fill-rule='nonzero' d='M14.796 1.234A.716.716 0 0 0 14.76.198a.776.776 0 0 0-1.071.034L.204 14.19a.716.716 0 0 0-.01.99l13.484 14.577a.776.776 0 0 0 1.07.057.716.716 0 0 0 .059-1.035L1.784 14.701 14.796 1.234z'/%3E%3C/svg%3E%0A");
+}
+
+.slick-next {
+  right: -25px;
+  transform: translate(100%, -50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='30' viewBox='0 0 15 30'%3E%3Cpath fill='%23000' fill-rule='nonzero' d='M.204 1.234A.716.716 0 0 1 .24.198a.776.776 0 0 1 1.071.034L14.796 14.19a.716.716 0 0 1 .01.99L1.323 29.756a.776.776 0 0 1-1.07.057.717.717 0 0 1-.059-1.035l13.023-14.077L.204 1.234z'/%3E%3C/svg%3E%0A");
+}
