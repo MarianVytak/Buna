@@ -8,19 +8,19 @@
                 <form>
                     <div class="form-group">
                         <label class="input">
-                            <input type="text" class="form-control" placeholder="Имя" required>
+                            <input type="text" class="form-control" placeholder="Имя" minlength="2" required>
                             <span class="placeholder">Имя</span>
                         </label>
                     </div>
                     <div class="form-group">
                         <label class="input">
-                            <input type="text" class="form-control" placeholder="Дата рождения" required>
+                            <input type="text" class="form-control form-date" placeholder="Дата рождения" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required>
                             <span class="placeholder">Дата рождения</span>
                         </label>
                     </div>
                     <div class="form-group">
                         <label class="input">
-                            <input type="tel" class="form-control" placeholder="Телефон" required>
+                            <input type="tel" class="form-control" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                             <span class="placeholder">Телефон</span>
                         </label>
                     </div>
