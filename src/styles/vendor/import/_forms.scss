@@ -60,23 +60,27 @@
 .form-control {
   width: 100%;
   height: 70px;
-  padding: 0 20px;
+  padding: 30px 20px 0;
   border-color: #f1efee;
   border-radius: 8px;
   background-color: #f1efee;
   font-size: 1.125em;
+  &:focus {
+    box-shadow: none;
+    border-color: #f1efee;
+  }
   &:placeholder-shown + .placeholder {
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.3125em;
   }
   &:not(:placeholder-shown) + .placeholder {
-    top: 0;
+    top: 8px;
     transform: none;
     font-size: 18px;
   }
   &:focus + .placeholder {
-    top: 0;
+    top: 8px;
     transform: none;
     font-size: 1.125em;
   }

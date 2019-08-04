@@ -3,29 +3,19 @@
   .container-fluid {
     padding: 0;
   }
+  .toggle {
+    width: 350px;
+  }
+  .toggle__btn {
+    &.active {
+      background-color: $black;
+    }
+  }
 }
 
 .map__info {
   width: min-content;
   padding: 60px 15px;
-}
-
-.map__info_toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  border: 1px solid $white;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.map__info_toggle_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 174px;
-  height: 48px;
 }
 
 .map__info_address {
@@ -96,17 +86,26 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .map {
+    .toggle {
+      margin: 0 auto;
+    }
+  }
   .map__info_address {
     margin-top: 20px;
   }
-  .map__info_toggle {
-    width: 100%;
-  }
-  .map__info_toggle_item {
-    width: 100%;
-    font-size: 14px;
-  }
   .map__block {
     height: 350px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .map {
+    .toggle {
+      width: 100%;
+    }
+    .toggle__btn {
+      font-size: 14px;
+    }
   }
 }

@@ -1,6 +1,14 @@
 .partners-card {
   padding: 90px 0 60px;
   background-color: $white;
+  .card__icon {
+    margin: 0 auto 30px;
+  }
+  .text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
@@ -8,11 +16,6 @@
   .partners-card {
     .card__icon {
       margin: 40px auto 20px;
-    }
-    .text {
-      display: block;
-      width: 100%;
-      text-align: center;
     }
   }
 }

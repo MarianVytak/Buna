@@ -12,9 +12,9 @@
 
                             <h2 class="title-2 text-white">Твои любимые кофейни в одном приложении</h2>
 
-                            <div class="map__info_toggle">
-                                <div class="map__info_toggle_item text-white">Кофейни партнеров</div>
-                                <div class="map__info_toggle_item bg-white">Кофейни «Стандарт»</div>
+                            <div class="toggle border-white">
+                                <a href="#mapPartners" class="toggle__btn active">Кофейни партнеров</a>
+                                <a href="#mapStandard" class="toggle__btn">Кофейни «Стандарт»</a>
                             </div>
 
                         </div>
@@ -46,7 +46,8 @@
 
             </div>
             <div class="col-lg-7">
-                <div class="map__block" id="map"></div>
+                <div class="map__block toggle__content active" id="mapPartners"></div>
+                <div class="map__block toggle__content" id="mapStandard"></div>
             </div>
 
         </div>
@@ -57,62 +58,3 @@
 <!-- /.map -->
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiwyKCFU3ZprAyC-WtqVlwSNgIK_IeRyE"></script>
-<script>
-    // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
-
-    function init() {
-        // Basic options for a simple Google Map
-        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-        var mapOptions = {
-            // How zoomed in you want the map to start at (always required)
-            zoom: 11,
-            zoomControl: false,
-            mapTypeControl: false,
-            fullscreenControl: false,
-            streetViewControl: false,
-
-            // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(55.7286986,37.6095727), // г. Москва, 1-я улица Измайловского Зверинца, д.8.
-
-            // How you would like to style the map.
-            // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]};
-
-        // Get the HTML DOM element that will contain your map
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        var neighborhoods = [
-            // Main
-            {lat: 55.72869, lng: 37.6086593, title: 'Ленинский проспект, д. 2А', icon: 'pin.svg'},
-        ];
-
-        var markers = [];
-
-        function drop() {
-            for (var i = 0; i < neighborhoods.length; i++) {
-                addMarkerWithTimeout(neighborhoods[i], i * 1000);
-            }
-        }
-
-        function addMarkerWithTimeout(marker, timeout) {
-            window.setTimeout(function() {
-                markers.push(new google.maps.Marker({
-                    position: new google.maps.LatLng(marker["lat"], marker["lng"]),
-                    map: map,
-                    title: marker["title"],
-                    icon: {
-                        url: "img/svg/" + marker["icon"]
-                    },
-                    animation: google.maps.Animation.DROP
-                }));
-            }, timeout);
-        }
-
-        drop();
-    }
-</script>
